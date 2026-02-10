@@ -1,0 +1,6 @@
+11:25:33 **** Clean-only build of configuration Nios II for project waves_bsp ****
+make clean 
+[BSP clean complete]
+
+11:25:35 Build Finished (took 1s.999ms)
+

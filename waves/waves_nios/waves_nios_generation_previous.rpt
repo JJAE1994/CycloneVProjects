@@ -1,0 +1,144 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\intelFPGA_lite\18.1\waves\waves_nios.qsys --block-symbol-file --output-directory=D:\intelFPGA_lite\18.1\waves\waves_nios --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading waves/waves_nios.qsys
+Progress: Reading input file
+Progress: Adding DAC [altera_avalon_pio 18.1]
+Progress: Parameterizing module DAC
+Progress: Adding LEDS [altera_avalon_pio 18.1]
+Progress: Parameterizing module LEDS
+Progress: Adding adc_0 [altera_up_avalon_adc 18.0]
+Progress: Parameterizing module adc_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 16.1]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding pll_0 [altera_pll 18.1]
+Progress: Parameterizing module pll_0
+Progress: Adding sdram_controller_0 [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram_controller_0
+Progress: Adding switches [altera_avalon_pio 18.1]
+Progress: Parameterizing module switches
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: waves_nios.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: waves_nios.nios2_qsys_0: Nios II Classic cores are no longer recommended for new projects
+Info: waves_nios.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Warning: waves_nios.pll_0: Able to implement PLL - Actual settings differ from Requested settings
+Info: waves_nios.sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: waves_nios.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: waves_nios.pll_0: pll_0.locked must be exported, or connected to a matching conduit.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\intelFPGA_lite\18.1\waves\waves_nios.qsys --synthesis=VHDL --output-directory=D:\intelFPGA_lite\18.1\waves\waves_nios\synthesis --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading waves/waves_nios.qsys
+Progress: Reading input file
+Progress: Adding DAC [altera_avalon_pio 18.1]
+Progress: Parameterizing module DAC
+Progress: Adding LEDS [altera_avalon_pio 18.1]
+Progress: Parameterizing module LEDS
+Progress: Adding adc_0 [altera_up_avalon_adc 18.0]
+Progress: Parameterizing module adc_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 16.1]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding pll_0 [altera_pll 18.1]
+Progress: Parameterizing module pll_0
+Progress: Adding sdram_controller_0 [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram_controller_0
+Progress: Adding switches [altera_avalon_pio 18.1]
+Progress: Parameterizing module switches
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: waves_nios.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: waves_nios.nios2_qsys_0: Nios II Classic cores are no longer recommended for new projects
+Info: waves_nios.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Warning: waves_nios.pll_0: Able to implement PLL - Actual settings differ from Requested settings
+Info: waves_nios.sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: waves_nios.switches: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: waves_nios.pll_0: pll_0.locked must be exported, or connected to a matching conduit.
+Info: waves_nios: Generating waves_nios "waves_nios" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: DAC: Starting RTL generation for module 'waves_nios_DAC'
+Info: DAC:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=waves_nios_DAC --dir=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0002_DAC_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0002_DAC_gen//waves_nios_DAC_component_configuration.pl  --do_build_sim=0  ]
+Info: DAC: Done RTL generation for module 'waves_nios_DAC'
+Info: DAC: "waves_nios" instantiated altera_avalon_pio "DAC"
+Info: adc_0: Starting Generation of ADC Controller for DE-series Board
+Info: adc_0: D:/intelfpga_lite/18.1/ip/altera/university_program/input_output/altera_up_avalon_adc/hdl/altera_up_avalon_adv_adc.v C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0003_sopcgen/waves_nios_adc_0.v
+Info: adc_0: "waves_nios" instantiated altera_up_avalon_adc "adc_0"
+Info: jtag_uart_0: Starting RTL generation for module 'waves_nios_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=waves_nios_jtag_uart_0 --dir=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0006_jtag_uart_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0006_jtag_uart_0_gen//waves_nios_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'waves_nios_jtag_uart_0'
+Info: jtag_uart_0: "waves_nios" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_qsys_0: Starting RTL generation for module 'waves_nios_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/eperlcmd.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=waves_nios_nios2_qsys_0 --dir=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0007_nios2_qsys_0_gen/ --quartus_bindir=D:/intelfpga_lite/18.1/quartus/bin64 --verilog --config=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0007_nios2_qsys_0_gen//waves_nios_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0  ]
+Info: nios2_qsys_0: # 2022.12.21 06:08:18 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2022.12.21 06:08:18 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2022.12.21 06:08:19 (*)   Couldn't query license setup in Quartus directory D:/intelfpga_lite/18.1/quartus/bin64
+Info: nios2_qsys_0: # 2022.12.21 06:08:19 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2022.12.21 06:08:19 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys_0: # 2022.12.21 06:08:19 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2022.12.21 06:08:19 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys_0: # 2022.12.21 06:08:19 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2022.12.21 06:08:19 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2022.12.21 06:08:20 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2022.12.21 06:08:20 (*)   Creating plain-text RTL
+Info: nios2_qsys_0: # 2022.12.21 06:08:22 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'waves_nios_nios2_qsys_0'
+Info: nios2_qsys_0: "waves_nios" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: pll_0: "waves_nios" instantiated altera_pll "pll_0"
+Info: sdram_controller_0: Starting RTL generation for module 'waves_nios_sdram_controller_0'
+Info: sdram_controller_0:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=waves_nios_sdram_controller_0 --dir=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0009_sdram_controller_0_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0009_sdram_controller_0_gen//waves_nios_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller_0: Done RTL generation for module 'waves_nios_sdram_controller_0'
+Info: sdram_controller_0: "waves_nios" instantiated altera_avalon_new_sdram_controller "sdram_controller_0"
+Info: switches: Starting RTL generation for module 'waves_nios_switches'
+Info: switches:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=waves_nios_switches --dir=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0010_switches_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Acer/AppData/Local/Temp/alt9347_5284233533721445950.dir/0010_switches_gen//waves_nios_switches_component_configuration.pl  --do_build_sim=0  ]
+Info: switches: Done RTL generation for module 'waves_nios_switches'
+Info: switches: "waves_nios" instantiated altera_avalon_pio "switches"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "waves_nios" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "waves_nios" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "waves_nios" instantiated altera_reset_controller "rst_controller"
+Info: nios2_qsys_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_0_data_master_translator"
+Info: adc_0_adc_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "adc_0_adc_slave_translator"
+Info: nios2_qsys_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_0_data_master_agent"
+Info: adc_0_adc_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "adc_0_adc_slave_agent"
+Info: adc_0_adc_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "adc_0_adc_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file D:/intelFPGA_lite/18.1/waves/waves_nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/intelFPGA_lite/18.1/waves/waves_nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file D:/intelFPGA_lite/18.1/waves/waves_nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: waves_nios: Done "waves_nios" with 31 modules, 52 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
